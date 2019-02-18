@@ -118,6 +118,7 @@ li{
     .header-nav{
         display: flex;
         flex-direction: column;
+        margin-top: 10px;
     }
 }
 
@@ -133,9 +134,9 @@ li{
 
     .header-nav a {
         display: flex;
-        border-top: 1px solid gray;
+        border-bottom: 1px solid gray;
         width: 100%;
-        padding: 25px;
+        padding: 25px 0;
         justify-content: center;
     }
 }
@@ -147,7 +148,8 @@ li{
         order: -6;
         justify-content: center;
         width: 100%;
-        margin: 40px 0;
+        margin:  0;
+        padding: none;
     }
 }
 
