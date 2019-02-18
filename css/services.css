@@ -1,3 +1,69 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+
 a {
     text-decoration: none;
     color: gray;
@@ -31,7 +97,7 @@ li{
 
 .container{
     
-    width: 880px;
+    width: 1024px;
     
 }
 .container-home {
@@ -48,6 +114,43 @@ li{
        
 }
 
+@media (max-width: 500px){
+    .header-nav{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 800px){
+    .header-nav{
+    display: flex;
+    flex-wrap: wrap; 
+    margin: 0 20px;   
+    }
+}
+
+@media(max-width: 500px){
+
+    .header-nav a {
+        display: flex;
+        border-top: 1px solid gray;
+        width: 100%;
+        padding: 25px;
+        justify-content: center;
+        }
+}
+
+@media (max-width: 800px){
+    .nav-image{
+
+        display: flex;
+        order: -6;
+        justify-content: center;
+        width: 100%;
+        margin: 40px 0;
+    }
+}
+
 .services-main-content{
     display: flex;
     flex-direction: column;
@@ -58,13 +161,30 @@ li{
 }
 
 .services-header-img{
-    margin: 20px 0;   
+    margin: 20px 0; 
+    width: 100%  
 }
 
 .services-text{
     margin: 20px 0;
     padding-bottom: 30px;
     border-bottom: 2px solid gray;
+}
+
+@media(max-width: 500px){
+
+    .services-text {
+        width: 90%;
+        padding-left: 20px;
+        }
+}
+
+@media(max-width: 800px){
+
+    .services-text {
+        width: 90%;
+        padding-left: 20px;
+        }
 }
 
 .services-text h3{
@@ -119,19 +239,47 @@ li{
 .top-2{
     display: flex;
     justify-content: space-between;
-   
-   
-    
+     
 }
+
+@media(max-width: 500px){
+ 
+    .top-2 {
+       display: flex;
+       flex-direction: column;
+       widthL 90%
+        }
+}
+
 .middle-2{
     display: flex;
     margin-top: 20px;
     
     
+    
 }
+
+@media(max-width: 500px){
+ 
+    .middle-2 {
+       display: flex;
+       flex-direction: column;
+       width: 90%
+    }
+}
+
 .bottom-2{
     display: flex;
     margin-top: 20px;
+}
+
+@media(max-width: 500px){
+ 
+    .bottom-2 {
+       display: flex;
+       flex-direction: column;
+       width: 90%
+        }
 }
 
 .services-footer{
@@ -141,6 +289,21 @@ li{
     padding-top: 30px;
     
 }
+
+@media(max-width: 500px){
+ 
+    .services-footer {
+       width: 90%;
+       margin: 0 20px;
+    }
+}
+
+.services-info-img{
+
+    width: relative;
+    height: auto;
+}
+
 .copyright{
     margin: 50px;
     text-align: center;
