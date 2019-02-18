@@ -87,7 +87,7 @@ button:hover{
 }
 .container{
     
-    width: 880px;
+    width: 1024px;
     
     
 }
@@ -95,6 +95,13 @@ button:hover{
     display:flex;
     justify-content: center;
 }
+
+@media (max-width: 500px){
+    .logo{
+        margin-bottom: 15px;
+    }
+}
+
 
 .header-nav {
     
@@ -106,18 +113,20 @@ button:hover{
 }
 
 @media (max-width: 500px){
-    .logo{
-        margin-bottom: 15px;
-    }
-}
-
-@media (max-width: 500px){
-.header-nav{
+    .header-nav{
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-around;
 }
 }
+
+@media (max-width: 800px){
+    .header-nav{
+    display: flex;
+    flex-wrap: wrap;
+        
+    }
+    }
 
 @media(max-width: 500px){
 
@@ -130,7 +139,33 @@ button:hover{
 }
 
 }
+
+@media(max-width: 800px){
+
+    .header-nav a {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    }
+@media (max-width: 800px){
+    .nav-image{
+        display: flex;
+        order: -6;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
 @media(max-width:500px){
+    .header-lower-img{
+
+    display: none;
+}
+}
+
+@media(max-width:800px){
     .header-lower-img{
 
     display: none;
