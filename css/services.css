@@ -337,7 +337,7 @@ li{
 
 .services-footer{
     display: flex;
-    margin-top: 20px;
+    margin: 20px 10px ;
     border-top: 2px solid gray;
     padding-top: 30px;
     
